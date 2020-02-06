@@ -5,51 +5,31 @@ body {
     margin: 0;
 }
 
-h1 {
-    margin: 0;
-}
-
-a {
-    border-bottom: 4px solid #ffcc33;
-}
-
 a:hover {
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #ffcc33;
+    padding-bottom: 15px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 930px;
-}
-
-.clear {
-    clear: both;
-}
-
-/* Header */
-header {
-   /* height:  122px; */
+    display: flex;
+    justify-content: center;
 }
 
 .logo {
-    float: left;
-    margin: 40px 0;
-}
-   
-nav {
-    float: right;
-    margin-top: 50px;
+    margin: 40px 40px;
+    padding: 20px;
 }
 
 .menu {
-    padding: 0;
-    margin: 0;
-    display: block;
+    padding: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
 }
+
 .menu li {
-    float: left;
-    display: block;
-    margin-right: 36px;
+    margin-right: 20px;
+    list-style-type: none;
 }
 
 .menu a {
@@ -62,6 +42,11 @@ nav {
 #main {
     background-image: url(img/ethanol.jpg);
     background-size: cover;
+}
+
+.website {
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -79,15 +64,28 @@ p {
 }
 
 .test {
-    padding: 134px 0 100px 0;
+    padding: 134px 0 256px 0;
     text-align: center;
 }
+
 a.buttom {
     font-size: 22px;
     color:#fff;
     text-transform: uppercase;
     text-decoration: none;
 }
+
 a.buttom:hover {
-    color: green;
+    color:#fff;
 } 
+
+@media screen and (max-width: 600px) {
+    .logo {
+      margin: 20px;
+      padding: 20px;
+      display: block;
+    }
+   /* nav {
+      border-bottom: 1px solid red;
+    }*/
+  } 
